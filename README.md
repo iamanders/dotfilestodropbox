@@ -6,8 +6,8 @@ Inspired by Urres [system-backup-list](https://github.com/urre/system-backup-lis
 
 ## Crontab
 
-Run everyday at 14.00
+Run every 4 hour
 
 ```bash
-0 14 * * * /path-to/dotfilesbackup
+0 */4 * * * /path-to/dotfilesbackup > /dev/null 2>&1
 ```
